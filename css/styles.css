@@ -1,0 +1,70 @@
+.body {
+	padding: 10px;
+	width: 960px;
+}
+
+header {
+	width: 960px;
+	padding: 15px 0;
+	margin: 0;
+	color: #3d3a3a;
+	text-align: center;
+}
+
+p {
+	padding: 8px 5px;
+	margin: 0;
+}
+
+button {
+	height: 34px;
+	width: 70px;
+	margin: 0;
+	background-color: #2e4edd;
+	color: #fff;
+	font-size: 14px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: #1733ae;
+	cursor: pointer;
+}
+
+#content {
+	width: 960px;
+	padding: 0 20px;
+	margin: 0;
+}
+
+.boxes {
+	width: 290px;
+	height: 110px;
+	margin: 10px;
+	display: inline-block;
+	border: 1px solid #000;
+	overflow: hidden;
+}
+
+.lines {
+	width: 930px;
+	height: 66px;
+	margin: 13px 0;
+	border: 1px solid #000;
+	overflow: hidden;
+}
+
+.lines p {
+	padding: 10px 5px;
+}
+
+.boxes h4,
+.lines h4 {
+	width: 100%;
+	padding: 5px;
+	margin: 0;
+	color: #3a3737;
+	background-color: rgba(225,221,221,0.77);
+	border-bottom: 1px solid black;
+}

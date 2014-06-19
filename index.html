@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Boxes & Lines</title>
+		<!-- include css styling -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<header>
+			<h2>Boxes & Lines with jQuery</h2>
+			<!-- Buttons that when clicked change the class on the elements and alter the view layout -->
+			<button id="boxes">Boxes</button>
+			<button id="lines">Lines</button>
+		</header>
+		<section id="content">
+			<!-- The elements being manipulated -->
+			<div class="boxes">
+				<h4>Element 1</h4>
+				<p>This is the description for this element. You could include an image or link in here. You could also adjust the styling as well.</p>
+			</div>
+			<div class="boxes">
+				<h4>Element 2</h4>
+				<p>This is the description for this element. You could include an image or link in here. You could also adjust the styling as well.</p>
+			</div>
+			<div class="boxes">
+				<h4>Element 3</h4>
+				<p>This is the description for this element. You could include an image or link in here. You could also adjust the styling as well.</p>
+			</div>																											
+			<div class="boxes">																								
+				<h4>Element 4</h4>																							
+				<p>This is the description for this element. You could include an image or link in here. You could also adjust the styling as well.</p>
+			</div>																											
+			<div class="boxes">																								
+				<h4>Element 5</h4>																							
+				<p>This is the description for this element. You could include an image or link in here. You could also adjust the styling as well.</p>
+			</div>																											
+			<div class="boxes">																								
+				<h4>Element 6</h4>																							
+				<p>This is the description for this element. You could include an image or link in here. You could also adjust the styling as well.</p>
+			</div>
+		</section>
+	</body>
+	<!-- include jquery library -->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<!-- Boxes & Lines Script -->
+	<script type="text/javascript">
+		$('document').ready(function(){
+			$('#boxes').click(function() {
+			    $('#content div').removeClass('lines');
+			    $('#content div').addClass('boxes');
+			});
+			$('#lines').click(function() {
+			    $('#content div').removeClass('boxes');
+			    $('#content div').addClass('lines');
+			});
+		});	
+	</script>
+</html>
